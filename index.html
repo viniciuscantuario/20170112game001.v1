@@ -4,19 +4,33 @@
 <head>
 <!--Commenting-->
     <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <title>Game_001</title>
 </head>
 <body>
-    <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app();
     </script>
-</body>
+    <ul id="funcoes">
+        <!-- PLANETAS -->
+        <li onclick="changeId('status', '0');"><a style="background-color: #7f8c8d;">STATUS</a><i style="background-color: #95a5a6;">pres</i></li>
+        <li onclick="changeId('status', '1');"><a style="background-color: #7f8c8d;">STATUS</a><i style="background-color: #95a5a6;">menu</i></li>
+        <li onclick="changeId('status', '2');"><a style="background-color: #7f8c8d;">STATUS</a><i style="background-color: #95a5a6;">play</i></li>
+        <li onclick="changeId('status', '3');"><a style="background-color: #7f8c8d;">STATUS</a><i style="background-color: #95a5a6;">lose</i></li>
+        <div class="separator"></div>
+        <li onclick="changeId('planet', '0');"><a style="background-color: #27ae60;">PLANET</a><i style="background-color: #2ecc71;">0</i></li>
+        <li onclick="changeId('planet', '1');"><a style="background-color: #27ae60;">PLANET</a><i style="background-color: #2ecc71;">1</i></li>
+        <div class="separator"></div>
+        <li onclick="changeId('enemie', '0');"><a style="background-color: #2980b9;">ENEMIE</a><i style="background-color: #3498db;">0</i></li>
+        <li onclick="changeId('enemie', '1');"><a style="background-color: #2980b9;">ENEMIE</a><i style="background-color: #3498db;">1</i></li>
+        <div class="separator"></div>
+        <li onclick="changeId('orbit', '1');"><a style="background-color: #f39c12;">ORBIT</a><i style="background-color: #f1c40f;">1</i></li>
+        <li onclick="changeId('orbit', '2');"><a style="background-color: #f39c12;">ORBIT</a><i style="background-color: #f1c40f;">2</i></li>
+        <li onclick="changeId('orbit', '3');"><a style="background-color: #f39c12;">ORBIT</a><i style="background-color: #f1c40f;">3</i></li>
+        <li onclick="changeId('orbit', '4');"><a style="background-color: #f39c12;">ORBIT</a><i style="background-color: #f1c40f;">4</i></li>
+        <li onclick="changeId('orbit', '5');"><a style="background-color: #f39c12;">ORBIT</a><i style="background-color: #f1c40f;">5</i></li>
 
+    </ul>
+</body>
 </html>
